@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: -apple-system, 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.main {
+  width: 1130px;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.users-list {
+  width: 50vw;
+  height: 95vh;
+  background-color: #e1f1fc;
+  margin: 0 10px;
+  border: 2px solid #D5E4ED;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.users-list__select {
+  max-width: 45%;
+  margin: 0 auto;
+  height: 5%;
+  padding: 0 20px;
+}
+
+.users-list__select > select {
+  width: 100%;
+  height: 90%;
+}
+
+.users-list__search {
+  max-width: 95%;
+  margin: 0 auto;
+  height: 5%;
+  padding: 10px 0px;
+  display: flex;
+}
+
+.users-list__search > input {
+  width: 45%;
+  height: 30px;
+  outline: 0;
+  border-radius: 7px;
+  border: 2px solid #009fe3;
+  padding: 0 0 0 20px;
+  font-size: 16px;
+}
+
+.users-list__search > select {
+  width: 45%;
+  height: 34px;
+  text-align: center;
+  outline: 0;
+  border-radius: 7px;
+  border: 2px solid #009fe3;
+  font-size: 16px;
+  margin-left: 5%;
+}
+
+.favorites-users-list {
+  width: 50vw;
+  height: 95vh;
+  background-color: #e1f1fc;
+  margin: 0 10px;
+  border: 2px solid #D5E4ED;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.user-card {
+  max-width: 95%;
+  height: 90%;
+  border-radius: 7px;
+  margin: 0 auto;
+  border: 2px solid #009fe3;
+  display: flex;
+}
+
+.user-card__photo {
+  width: 20%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-card__photo > img {
+  height: 90%;
+  border-radius: 50%;
+}
+.user-card__info {
+  padding-left: 20px;
+  width: 60%;
+  height: 100%;
+}
+
+.user-card__remove {
+  display: flex;
+  align-items: center;
+}
+
+.user-card__remove>button {
+  border-radius: 7px;
+  border: 2px solid #D5E4ED;
+  padding: 5px 10px;
+}
+
+.user-card__remove>button:hover {
+  border: 2px solid #009fe3;
+}
+
+.favorites-users-list__title {
+  height: 5%;
+  color: #009fe3;
+  text-align: center;
+}
+
+.highlight {
+  color: #009fe3;
+}
