@@ -7,7 +7,7 @@ const FavoritesUsersList =  () => {
     const [userData, setUserData] = useState([])
 
     function dropCard(e) {
-        if (userData.filter(user => user.id == JSON.parse(e.dataTransfer.getData('data')).id).length === 0) {
+        if (userData.filter(user => user.id === JSON.parse(e.dataTransfer.getData('data')).id).length === 0) {
             setUserData([JSON.parse(e.dataTransfer.getData('data')), ...userData]);
         }
     }
