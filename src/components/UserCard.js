@@ -10,7 +10,7 @@ const UserCard = ({userData, style, valueInSearch, switchDraggable, removeUserFa
                 draggable={switchDraggable}
             >
                 <div className='user-card__photo'>
-                    <img src={userData.photo}/>
+                    <img src={userData.photo} alt='Loading...'/>
                 </div>
                 <div className='user-card__info'>
 
