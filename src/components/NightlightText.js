@@ -1,21 +1,18 @@
 import React from 'react';
 
-const NightlightText = ({ full_name, valueInSearch, date}) => {
+const NightlightText = ({full_name, valueInSearch, date}) => {
 
-    const getHighlightedText = () => {
-        const parts = full_name.split(new RegExp(`(${valueInSearch})`, 'gi'));
-        return <p>{parts.map(part =>
-            part.toLowerCase() === valueInSearch.toLowerCase()
-                ? <span className='highlight'>{part}</span>
-                : part)} | {date}</p>;
-    }
-
+    const parts = full_name.split(new RegExp(`(${valueInSearch})`, 'gi'));
 
     return (
         <div>
-            <div>{getHighlightedText()}</div>
+            <p>{parts.map((part, index) =>
+                part.toLowerCase() === valueInSearch.toLowerCase()
+                    ? <span key={index} className='highlight'>{part}</span>
+                    : part)} | {date}
+            </p>
         </div>
     );
-};
+}
 
 export default NightlightText;
